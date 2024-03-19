@@ -42,10 +42,10 @@ class BroadcastSPLValueJob implements ShouldQueue
         $pdf->get_canvas()->get_cpdf()->setEncryption('password', '', array());
 
         if (app()->environment('local')) {
-            $pdf_path = "storage/app/public/broadcast_spl_value/".$this->username.".pdf";
+            $pdf_path = "storage/app/public/broadcast_spl_value/alamak.pdf";
         } else {
             //Ubuntu
-            $pdf_path = "var/www/html/storage/public/broadcast_spl_value/".$this->username.".pdf";
+            $pdf_path = "var/www/html/storage/public/broadcast_spl_value/alamak.pdf";
         }
         
         $pdf->save($pdf_path);
