@@ -45,7 +45,7 @@ class BroadcastSPLValueJob implements ShouldQueue
             $pdf_path = "storage/app/public/broadcast_spl_value/alamak.pdf";
         } else {
             //Ubuntu
-            $pdf_path = "var/www/html/mail_services/storage/public/broadcast_spl_value/alamak.pdf";
+            $pdf_path = "var/www/html/mail_services/public/storage/broadcast_spl_value/alamak.pdf";
         }
         
         $pdf->save($pdf_path);
